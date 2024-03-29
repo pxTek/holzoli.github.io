@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 10%;
+    overflow: hidden;
+}
+
+.navbar {
+    margin-left: -45px;
+    width: 110%;
+    z-index: 3;
+    background-image: linear-gradient(45deg, #690000, #9e4c00);
+    border-radius: 45px;
+    border-top-right-radius: 0;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 25px;
+    line-height: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 14px 40px;
+    background-image: linear-gradient(45deg, #ff0000, #af5500);
+    font-size: 26px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.content h1 {
+    font: bold;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    font-size: 40px;
+    color: #ffffff;
+    animation-delay: 0.75s;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 25px;
+    animation-delay: 1.5s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #fff;
+    font-size: 26px;
+}
+
+.imprint-btn:hover {
+    text-shadow: 0 0 10px #fff;
+    font-size: 21px;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+h3 {
+    font-size: 14px;
+    align-items: end;
+    animation-delay: 2.25s;
+    color: #ffffff;
+}
+
+h3 a {
+    text-decoration: none;
+    color: rgb(0, 131, 218);
+}
+
+.checkbtn {
+    width: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 858px) {
+    .content h1 {
+        font: bold;
+        font-size: 50px;
+        color: #ffffff;
+        transition: .5;
+    }
+    
+    .content p {
+        margin: 10px 0 30px;
+        font-size: 20px;
+        color: #ffffff;
+        animation-delay: 0.75s;
+        transition: .5;
+    }
+    
+    .content .btn {
+        padding: 10px 50px;
+        font-size: 25px;
+        animation-delay: 1.5s;
+        transition: .5;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        margin-top: 40px;
+        background: linear-gradient(45deg, #000000, #6e0000);
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        border-radius: 45px;
+        box-shadow: 0 0 30px #7e0000;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        transition: .5;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}

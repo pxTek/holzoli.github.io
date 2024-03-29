@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolzOli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="HOicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <nav>
+
+                <label class="logo">
+                    <img class="logo" src="logo.png">
+                </label>
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Gallerie</a></li>
+                    <li><a href="#">Über</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+                <input type="checkbox" id="check" name="check">
+                <label for="check" class="checkbtn">
+                <a class="icon">
+                    <img src="menu.png" class="checkbtn">
+                </a> 
+                </label>
+                
+            </nav>
+        </div>
+        <div class="content">
+            <h1 class="animation">Holzarbeit<br>mit Präzision.</h1>
+            <br>
+            <p class="animation">Handgemacht.<br>In bester Qualität.</p>
+            <br>
+            <a href="more/index.html" class="btn animation">Mehr</a>
+        </div>
+        <br><br><br><br>
+        <h3 class="content">
+            This service is hosted by <a href="https://breadbyte.cloud" target="_blank">breadbyte.cloud</a>
+        </h3>
+        <script>
+            const checkbox = document.querySelector("#check");
+            const nav = document.querySelector("ul");
+            checkbox.addEventListener("change", () => {
+            console.log(checkbox.checked);
+            if (checkbox.checked) {
+                nav.style.right = "6%";
+            } else {
+                nav.style.right = "-100%";
+            }
+            });
+        </script>
+    </div>
+
+    
+</body>
+</html>
