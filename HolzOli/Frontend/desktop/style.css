@@ -106,11 +106,6 @@ nav ul li a:hover {
     font-size: 26px;
 }
 
-.imprint-btn:hover {
-    text-shadow: 0 0 10px #fff;
-    font-size: 21px;
-}
-
 .animation {
     opacity: 0;
     transform: translateY(30px);
